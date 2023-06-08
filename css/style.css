@@ -1,0 +1,114 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.nav-bar{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-item{
+    padding: 5px 1em;
+    width: 80px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:last-child {
+    border-right: none;
+}
+
+.nav-item:hover{
+    background: lightgoldenrodyellow;
+    margin-top: -3px;
+}
+
+.logo{
+    height: 2cm;
+}
+
+.hero{
+    height: 1366px;
+    /* width: 578px; */
+    background-image: url('https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61dee4b2dc58f411f5a08d55_RevoU%20(2).jpg');
+    background-size: contain;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.headquarters-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.headquarters-image{
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#kirim {
+    padding: 0.5em;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    text-align: right;
+}
+
+.message-us {
+    display: flex;
+}
+
+.column{
+    width: 50%;
+}
+
+#tampil{
+    border: 1px solid black;
+    padding: 1%;
+}
+
+#kirim{
+    width: 80%;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+    }
+    .nav-bar{
+        flex-direction: column;
+        border: none;
+        width: 100%;
+    }
+    .nav-item{
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .nav-item:last-child {
+        border-right: 1px solid black;
+    }
+    .logo{
+        margin-bottom: 5%;
+    }
+    
+    
+}
+/* headquarter untuk pas di bulat (fittocontext) */
+/* background-repat: no-repeat */
