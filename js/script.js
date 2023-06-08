@@ -20,11 +20,13 @@ function validateForm() {
     return false;
   }
 
+  var datetime = new Date();
+  console.log(datetime);
+  document.getElementById("time").textContent = datetime;
+
   document.getElementById("sender-full-name").innerHTML = name;
   document.getElementById("sender-birth-date").innerHTML = birthDate;
   document.getElementById("sender-gender").innerHTML = gender;
   document.getElementById("sender-messages").innerHTML = messages;
   return false;
-  
 }
-
