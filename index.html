@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header class="heade-wrapper">
+        <img src="img/logo-revoU.svg" alt="RevoU Logo" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item">Home</div>
+            <div class="nav-item"><a href="profile.html" style="text-decoration: none;">Our Profile</a></div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Massage Us</div>
+        </div>
+    </header>
+
+    <div id="hero-section" class="hero">
+        <h1>Hi <span id="nama"></span>. Welcome To Website!</h1>
+        <h2>Ini adalah website latihan pertama</h2>
+    </div>
+
+    <script>
+        var name = prompt("Masukkan nama kamu");
+        document.getElementById("nama").innerText = name;
+        
+    </script>
+
+    <div id="headquarters-section">
+        <h1>Headquarters</h1>
+        <div class="wrapper">
+            <div class="headquarters-image-container">
+                <div class="headquarters-image">
+                    <img src="img/Hq jkt.jpg" alt="hq Jakarta" class="img-hq">
+                </div>
+                <h3>Jakarta</h3>
+            </div>
+            <div class="headquarters-image-container">
+                <img src="img/hq bdg.jpg" alt="hq Bandung" class="img-hq">
+                <h3>Bandung</h3>
+            </div>
+            <div class="headquarters-image-container">
+                <img src="img/hq sby.jpg" alt="hq surabaya" class="img-hq">
+                <h3>Surabaya</h3>
+            </div>
+        </div>
+    </div>
+
+    <h1>Message Us</h1>
+    <div id="massage-us-section" class="message-us">
+        <div class="column">
+            <form name="message-form" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input placeholder="Nama" type="text" name="full-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="birth-date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="laki-laki" checked>Laki-laki
+                            <input type="radio" id="female" name="gender" value="perempuan">Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td><textarea placeholder="Pesan" name="messages" cols="30" rows="10"></textarea></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit"></input>
+            </form>
+        </div>
+        <div class="column" id="tampil">
+            <table>
+                <tr>
+                    <td>Current Time</td>
+                    <td>:</td>
+                    <td><span id="time"></span></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><span id="sender-full-name"></span></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><span id="sender-birth-date"></span></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><span id="sender-gender"></span> </td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><span id="sender-messages"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br><br>
+
+    <footer>
+        Created By Sausan Trisdiatin
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>

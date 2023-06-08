@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <header class="heade-wrapper">
+        <img src="img/logo-revoU.svg" alt="RevoU Logo" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item"><a href="index.html" style="text-decoration: none;">Home</a></div>
+            <div class="nav-item">Our Profile</div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Massage Us</div>
+        </div>
+    </header>
+
+    <div id="banner">
+        <img src="img/banner RevoU.png" alt="banner revou" style="width: 100%;">
+    </div>
+
+    <div id="hero-section" class="hero">
+        <h1>Mari bergabung bersama kami!</h1>
+        <h3>Sudah dari ribuan orang mendaftar disini</h3>
+    </div>
+
+    <section>
+        <nav>
+            <img src="img/star company logo.jpg" alt="star logo" style="width: 100%;">
+        </nav>
+
+        <article>
+            <h2>About Us</h2>
+            <h1><b>STAR TECH SOLUTIONS</b></h1>
+            <p>Star Tech Solutions adalah perusahaan teknologi informasi yang berfokus pada pengembangan solusi
+                perangkat lunak inovatif.
+                Didirikan pada tahun 2010, perusahaan kami telah tumbuh menjadi pemimpin di industri IT dengan
+                menyediakan produk dan layanan terdepan kepada klien di seluruh dunia. Dengan tim yang terdiri dari
+                insinyur berbakat dan ahli industri, Star Tech Solutions berdedikasi untuk memberikan solusi yang
+                terukur
+                dan skalabel bagi pelanggan kami. Kami memiliki pengalaman yang luas dalam menghadirkan solusi perangkat
+                lunak kustom, pengembangan aplikasi seluler, integrasi sistem, dan layanan pengelolaan infrastruktur IT.
+                Komitmen kami terhadap kualitas dan inovasi telah memungkinkan kami membangun hubungan jangka panjang
+                dengan klien kami. Kami percaya bahwa teknologi memiliki potensi besar untuk mentransformasi bisnis dan
+                masyarakat, dan kami berupaya memberikan solusi IT yang dapat memberdayakan dan mempercepat pertumbuhan
+                organisasi di era digital.</p>
+            <h3>Visi Perusahaan</h3>
+            <p>Visi kami adalah menjadi mitra teknologi terpercaya bagi perusahaan-perusahaan di seluruh dunia, dengan
+                menghadirkan solusi inovatif yang mengubah cara mereka beroperasi. Kami bertujuan untuk menjadi pusat
+                inovasi IT yang menantang status quo dan mendorong perubahan positif dalam industri.</p>
+            <h3>Misi Perusahaan</h3>
+            <p>1. Menyediakan solusi teknologi terdepan: Kami berkomitmen untuk menghadirkan solusi perangkat lunak yang
+                inovatif dan disesuaikan dengan kebutuhan unik setiap klien kami. Melalui penggunaan teknologi terbaru
+                dan praktik pengembangan terbaik, kami memastikan bahwa solusi yang kami kembangkan membantu pelanggan
+                kami mencapai tujuan bisnis mereka. <br>
+                2. Membangun hubungan jangka panjang: Kami percaya bahwa kolaborasi yang kuat dengan pelanggan dan mitra
+                bisnis kami adalah kunci keberhasilan. Kami berusaha untuk membangun hubungan jangka panjang yang
+                didasarkan pada kepercayaan, integritas, dan kepuasan pelanggan. Kami bekerja keras untuk memahami
+                kebutuhan bisnis pelanggan kami dan memberikan solusi yang memberikan nilai tambah yang signifikan. <br>
+                3. Mendorong inovasi: Kami berkomitmen untuk terus berinovasi dan memperkenalkan teknologi terbaru ke
+                dalam solusi kami. Kami mengikuti tren industri terbaru, melakukan riset dan pengembangan yang intensif,
+                serta memanfaatkan pengetahuan dan keahlian tim kami untuk menciptakan solusi yang memenuhi tuntutan
+                yang selalu berubah di dunia digital. <br>
+                4. Memperhatikan keberlanjutan: Kami sadar akan dampak yang kami berikan pada lingkungan dan masyarakat.
+                Oleh karena itu, kami berusaha untuk mengintegrasikan praktik berkelanjutan dalam semua aspek
+                operasional kami. Kami mempromosikan penggunaan teknologi yang ramah lingkungan dan mendukung
+                proyek-proyek sosial yang berdampak positif.</p>
+            <p>Kami berkomitmen untuk terus tumbuh dan berinovasi, serta memberikan solusi teknologi yang dapat
+                mengatasi tantangan masa depan. Bersama-sama, kami membangun masa depan yang lebih baik melalui
+                teknologi informasi.</p>
+        </article>
+    </section>
+
+
+    <h1>Message Us</h1>
+    <div id="massage-us-section" class="message-us">
+        <div class="column">
+            <form name="message-form" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input placeholder="Nama" type="text" name="full-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="birth-date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="laki-laki" checked>Laki-laki
+                            <input type="radio" id="female" name="gender" value="perempuan">Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td><textarea placeholder="Pesan" name="messages" cols="30" rows="10"></textarea></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit"></input>
+            </form>
+        </div>
+        <div class="column" id="tampil">
+            <table>
+                <tr>
+                    <td>Current Time</td>
+                    <td>:</td>
+                    <td><span id="time"></span></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><span id="sender-full-name"></span></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td>:</td>
+                    <td><span id="sender-birth-date"></span></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td><span id="sender-gender"></span> </td>
+                </tr>
+                <tr>
+                    <td>Pesan</td>
+                    <td>:</td>
+                    <td><span id="sender-messages"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br><br>
+
+    <footer>
+        Created By Sausan Trisdiatin
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

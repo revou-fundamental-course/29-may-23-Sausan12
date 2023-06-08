@@ -35,7 +35,7 @@ header {
 
 .hero {
   height: 683px;
-  background-image: url("https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61dee00337b7ec48f892127c_hero%20banner%20DA%20centered.jpg");
+  background-image: url("https://assets-global.website-files.com/61af164800e38c4f53c60b4e/61dee0038171d0896752d056_hero%20banner%20DM%20centered.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -47,37 +47,25 @@ header {
   display: flex;
 }
 
-.img-hq {
-  vertical-align: middle;
-  height: 8em;
-  width: 8em;
-  border-radius: 50%;
+nav {
+  float: left;
+  width: 20%;
+  height: 300px;
+}
+
+section {
   border: 1px solid black;
 }
 
-#headquarters-section {
-  border: 1px solid black;
+article {
+  width: 100%;
+  background-color: lightgoldenrodyellow;
 }
 
-.headquarters-image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1em;
-}
-
-.headquarters-image {
-  height: 8em;
-  width: 8em;
-  border-radius: 50%;
-  border: 1px solid black;
-}
-
-#kirim {
-  padding: 0.5em;
-  width: 150px;
-  border: none;
-  cursor: pointer;
+section::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 footer {
@@ -104,6 +92,10 @@ footer {
   border: 1px solid black;
 }
 
+#banner {
+  width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -125,21 +117,10 @@ footer {
     margin-bottom: 5%;
   }
 
-  .hero {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid black;
-    padding: 5%;
-  }
-
-  .img-hq {
+  nav,
+  article {
     width: 100%;
-    height: 100%;
-  }
-  .headquarters-image {
-    width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .message-us {
